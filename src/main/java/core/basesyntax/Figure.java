@@ -13,6 +13,6 @@ public abstract class Figure implements Area {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Figure{" + "color='" + color + '\'' + '}';
     }
 }

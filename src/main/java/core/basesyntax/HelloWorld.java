@@ -8,15 +8,15 @@ import java.util.Arrays;
  */
 public class HelloWorld {
     public static void main(String[] args) {
-        String[] figures = new String[6];
+        Figure[] figures = new Figure[6];
         FigureSupplier figureSupplier = new FigureSupplier();
 
         for (int i = 0; i < 3; i++) {
-            figures[i] = String.valueOf(figureSupplier.getRandomFigure());
+            figures[i] = figureSupplier.getRandomFigure();
         }
 
         for (int i = 3; i < 6; i++) {
-            figures[i] = String.valueOf(figureSupplier.getDefaultFigure());
+            figures[i] = figureSupplier.getDefaultFigure();
         }
 
         System.out.println(Arrays.toString(figures));

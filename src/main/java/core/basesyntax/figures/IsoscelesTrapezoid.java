@@ -19,7 +19,7 @@ public class IsoscelesTrapezoid extends Figure {
 
     @Override
     public double getArea() {
-        double area = (upperBase + lowerBase) / 2 * height;
+        double area = (upperBase + lowerBase) * height / 2.0;
         BigDecimal bd = new BigDecimal(area);
         return bd.setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
