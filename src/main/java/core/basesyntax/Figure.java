@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public abstract class Figure implements Area {
+public abstract class Figure implements Area, Drawable {
     private String color;
 
     public void setColor(String color) {
@@ -9,10 +9,5 @@ public abstract class Figure implements Area {
 
     public String getColor() {
         return color;
-    }
-
-    @Override
-    public String toString() {
-        return "Figure{" + "color='" + color + '\'' + '}';
     }
 }

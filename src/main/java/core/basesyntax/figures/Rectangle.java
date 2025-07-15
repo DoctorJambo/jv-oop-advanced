@@ -20,7 +20,7 @@ public class Rectangle extends Figure {
     }
 
     @Override
-    public String toString() {
+    public String draw() {
         return "\n" + "Figure: rectangle, "
                 + "area: " + getArea() + " sq. units, width: "
                 + width + ", length: "

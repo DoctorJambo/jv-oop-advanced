@@ -18,7 +18,7 @@ public class DefaultCircle extends Figure {
     }
 
     @Override
-    public String toString() {
+    public String draw() {
         return "\n" + "Figure: circle, "
                 + "area: " + getArea() + " sq. units, radius: " + defaultRadius
                 + ", color: " + defaultColor;
